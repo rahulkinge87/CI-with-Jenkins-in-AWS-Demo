@@ -1,67 +1,22 @@
+--- 
 apiVersion: apps/v1
-
 kind: Deployment
-
-metadata:
-
+metadata: 
   name: webapp1
-
-spec:
-
+spec: 
   replicas: 3
-
-  selector:
-
-   matchLabels:
-
-    app: webapp1
-
-  template:
-
-    metadata:
-
-      labels:
-
+  selector: 
+    matchLabels: 
+      app: webapp1
+  template: 
+    metadata: 
+      labels: 
         app: webapp1
-
-    spec:
-
-      containers:
-
-      - name: webapp1
-
-        image: rahulkinge/devops:tagversion
-
-        ports:
-
-        - containerPort: 8080
-
----
-
-apiVersion: v1
-
-kind: Service
-
-metadata:
-
-  name: webapp1-svc
-
-  labels:
-
-    app: webapp1
-
-spec:
-
-  type: LoadBalancer
-
-  ports:
-
-  - protocol: TCP
-
-    port: 80
-
-    targetPort: 8080
-
-  selector:
-
-app: webapp1
+    spec: 
+      containers: 
+        - 
+          image: "rahulkinge/devops:tagversion"
+          name: webapp1
+          ports: 
+            - 
+              containerPort: 8080
