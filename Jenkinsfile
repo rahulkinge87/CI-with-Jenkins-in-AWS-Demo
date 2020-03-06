@@ -4,7 +4,7 @@ pipeline {
 
     environment {
 
-        PROJECT_ID = 'beaming-courage-261719'
+        PROJECT_ID = 'devopspipeline-1'
 
         CLUSTER_NAME = 'k8-cluster'
 
