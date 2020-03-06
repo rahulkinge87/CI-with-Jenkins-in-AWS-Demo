@@ -30,7 +30,7 @@ spec:
 
       - name: webapp1
 
-        image: rahuldevops1/k8s:tagversion
+        image: rahulkinge/k8s:tagversion
 
         ports:
 
