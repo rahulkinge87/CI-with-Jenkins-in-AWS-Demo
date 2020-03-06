@@ -56,7 +56,7 @@ pipeline {
 
                 script {
 
-                    myapp = docker.build("rahulkinge/k8s:${env.BUILD_ID}")
+                    myapp = docker.build("rahulkinge/k8:${env.BUILD_ID}")
 
                 }
 
