@@ -6,9 +6,9 @@ pipeline {
 
         PROJECT_ID = 'beaming-courage-261719'
 
-        CLUSTER_NAME = 'k8s-cluster-gcs'
+        CLUSTER_NAME = 'k8-cluster'
 
-        LOCATION = 'europe-west2-c'
+        LOCATION = 'us-central1-c'
 
         CREDENTIALS_ID = 'kubernetes'
 
@@ -56,7 +56,7 @@ pipeline {
 
                 script {
 
-                    myapp = docker.build("pradeepdevops1/k8s:${env.BUILD_ID}")
+                    myapp = docker.build("rahuldevops1/k8s:${env.BUILD_ID}")
 
                 }
 
