@@ -10,7 +10,7 @@ pipeline {
 
         LOCATION = 'us-central1-c'
 
-        CREDENTIALS_ID = 'kubernetes'
+        CREDENTIALS_ID = 'k8'
 
     }
 
