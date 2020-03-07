@@ -15,7 +15,7 @@ spec:
     spec: 
       containers: 
         - 
-          image: "gcr.io/rahulkinge/devops:tagversion"
+          image: "gcr.io/devopspipeline-1/rahulkinge/devops:tagversion"
           name: webapp1
           ports: 
             - 
