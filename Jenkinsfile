@@ -56,7 +56,10 @@ pipeline {
 
                 script {
 
-                    myapp = docker.build("rahulkinge/devops:${env.BUILD_ID}")
+                    /* myapp = docker.build("rahulkinge/devops:${env.BUILD_ID}") */
+		       myapp = docker.build("gcr.io/rahulkinge/devops:${env.BUILD_ID}")
+	            
+
 
                 }
 
@@ -70,7 +73,8 @@ pipeline {
 
                 script {
 
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker') {
+                   /* docker.withRegistry('https://registry.hub.docker.com', 'docker') */
+		      docker.withRegistry('https://gcr.io', 'gcr:gcpcred') {
 
                             myapp.push("${env.BUILD_ID}")
 
