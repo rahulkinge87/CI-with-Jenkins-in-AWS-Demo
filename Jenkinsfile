@@ -57,7 +57,7 @@ pipeline {
                 script {
 
                     /* myapp = docker.build("rahulkinge/devops:${env.BUILD_ID}") */
-		       myapp = docker.build("gcr.io/rahulkinge/devops:${env.BUILD_ID}")
+		       myapp = docker.build("gcr.io/devopspipeline-1/rahulkinge/devops:${env.BUILD_ID}")
 	            
 
 
