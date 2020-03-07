@@ -74,7 +74,7 @@ pipeline {
                 script {
 
                    /* docker.withRegistry('https://registry.hub.docker.com', 'docker') */
-		      docker.withRegistry('https://gcr.io', 'gcr:gcpcred') {
+		      docker.withRegistry('https://gcr.io', 'gcpcred') {
 
                             myapp.push("${env.BUILD_ID}")
 
